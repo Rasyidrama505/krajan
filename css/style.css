@@ -1,0 +1,343 @@
+/* General Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding-top: 76px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: -76px;
+    padding-top: 76px;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Quick Info Section */
+.info-box {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box i {
+    color: var(--primary-color);
+}
+
+/* Latest News Section */
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+.social-links a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .info-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-brand .fw-bold {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.navbar-brand .village-address {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1;
+    display: block;
+}
+
+/* Responsive styling */
+@media (max-width: 576px) {
+    .navbar-brand .fw-bold {
+        font-size: 1rem;
+    }
+    
+    .navbar-brand .village-address {
+        font-size: 0.7rem;
+    }
+}
+
+/* Map Section Styles */
+.map-section {
+    background-color: #f8f9fa;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    display: block;
+    border-radius: 8px;
+}
+
+.info-container .card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.info-item h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-item h5 i {
+    margin-right: 10px;
+}
+
+.info-item p {
+    color: #666;
+    margin-left: 28px;
+}
+
+.info-item ul li {
+    color: #666;
+    margin-bottom: 5px;
+    margin-left: 28px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+    
+    .info-container {
+        margin-top: 20px;
+    }
+}
+
+.potensi-dusun-section {
+    background: #fff;
+}
+.active-potensi-btn, .active-potensi-btn:focus {
+    background: #8bc34a !important;
+    color: #fff !important;
+    box-shadow: 0 4px 24px 0 rgba(139,195,74,0.07);
+}
+
+.potensi-dusun-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+.potensi-dusun-section .btn {
+    transition: background 0.2s, color 0.2s;
+}
+.potensi-dusun-section .btn:not(.active-potensi-btn):hover {
+    background: #f0f4e6;
+    color: #8bc34a;
+    border-color: #8bc34a;
+}
+.potensi-dusun-section .img-fluid {
+    transition: transform 0.2s;
+}
+.potensi-dusun-section .img-fluid:hover {
+    transform: scale(1.03);
+}
+
+.potensi-dusun-section {
+    background: #fff;
+}
+.potensi-btn {
+    background: #fff;
+    color: #222;
+    transition: all 0.3s ease;
+}
+.potensi-btn.active {
+    background: #8bc34a !important;
+    color: #fff !important;
+    box-shadow: 0 4px 24px 0 rgba(139,195,74,0.07);
+}
+.potensi-btn:hover:not(.active) {
+    background: #f0f4e6;
+    color: #8bc34a;
+    border-color: #8bc34a;
+}
+.potensi-images {
+    transition: all 0.3s ease;
+}
+.potensi-desc {
+    transition: all 0.3s ease;
+}
+.img-fluid {
+    transition: transform 0.2s;
+}
+.img-fluid:hover {
+    transform: scale(1.03);
+}
+
+/* Gallery Styles */
+.gallery-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-image:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-image:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.btn-outline-success {
+    color: #8bc34a;
+    border-color: #8bc34a;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success.active {
+    background-color: #8bc34a;
+    border-color: #8bc34a;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-image img {
+        height: 200px;
+    }
+    
+    .gallery-filter .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

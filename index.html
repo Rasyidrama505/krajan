@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Dusun Krajan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/logo.png" alt="Logo Desa" height="40">
+                <div class="ms-2">
+                    <span class="fw-bold d-block">Dusun Krajan</span>
+                    <span class="village-address d-block">Ds. Gondanglegi, Kec.Ambal, Kab.Kebumen</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">Profil Dusun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">UMKM Dusun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri Dusun</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="image/sawah.jpg" alt="Background Desa" class="hero-background">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="fw-bold d-block">Selamat Datang di Website Profil Dusun Krajan</h1>
+                <p class="fw d-block">Menuju Desa Mandiri dan Sejahtera</p>
+                <!-- <a href="#layanan" class="btn btn-primary btn-lg">Layanan Kami</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-box text-center">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h3>Total Penduduk</h3>
+                        <p>5,000 Jiwa</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box text-center">
+                        <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                        <h3>Luas Wilayah</h3>
+                        <p>500 Hektar</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-box text-center">
+                        <i class="fas fa-home fa-3x mb-3"></i>
+                        <h3>Jumlah KK</h3>
+                        <p>1,200 KK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Potensi Dusun Section (Pengganti Visi Misi) -->
+    <section id="potensi-dusun" class="potensi-dusun-section py-5 bg-white">
+    <div class="container">
+        <div class="row justify-content-center mb-2">
+            <div class="col-lg-10 text-center">
+                <h2 class="fw-bold d-block" style="font-size: 2.5rem;">
+                    Potensi Utama Dusun Krajan
+                </h2>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-7 d-flex justify-content-center gap-3">
+                <button class="btn btn-lg fw-semibold rounded-pill px-4 potensi-btn active" data-category="pertanian" style="font-size: 1.15rem;">
+                    <i class="fa-solid fa-seedling me-2"></i> Pertanian
+                </button>
+                <button class="btn btn-lg fw-semibold rounded-pill px-4 potensi-btn" data-category="peternakan" style="font-size: 1.15rem; border: 1px solid #e0e5d9;">
+                    <i class="fa-solid fa-cow me-2"></i> Peternakan
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+            <!-- Gambar Pertanian -->
+            <div class="potensi-images" id="pertanian-images">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <img src="image/padi.jpg" class="img-fluid rounded-4 shadow-sm" alt="Pertanian 1" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="image/jagung.jpg" class="img-fluid rounded-4 shadow-sm" alt="Pertanian 2" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="image/terong.jpg" class="img-fluid rounded-4 shadow-sm" alt="Pertanian 3" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="image/cabe.jpg" class="img-fluid rounded-4 shadow-sm" alt="Pertanian 4" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <!-- Gambar Peternakan -->
+            <div class="potensi-images d-none" id="peternakan-images">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <img src="image/sapi.jpg" class="img-fluid rounded-4 shadow-sm" alt="Peternakan 1" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="image/sapii.jpg" class="img-fluid rounded-4 shadow-sm" alt="Peternakan 2" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="image/kambing.jpg" class="img-fluid rounded-4 shadow-sm" alt="Peternakan 3" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <img src="image/ayam.jpg" class="img-fluid rounded-4 shadow-sm" alt="Peternakan 4" style="height: 200px; object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Penjelasan Potensi -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Deskripsi Pertanian -->
+                <div class="potensi-desc bg-light rounded-4 shadow-lg p-4" id="pertanian-desc">
+                    <h3 class="text-success fw-bold mb-3" style="font-size: 2rem;">Potensi Pertanian Dusun Krajan</h3>
+                    <ul class="mb-0 fs-5">
+                        <li>Dusun Krajan di Desa Gondanglegi, Kabupaten Kebumen memiliki potensi pertanian yang cukup menjanjikan berkat kondisi tanah yang subur dan ketersediaan air yang mendukung kegiatan bercocok tanam. Warga setempat umumnya menggarap lahan sawah dan ladang untuk menanam padi, jagung, serta berbagai jenis sayuran seperti cabai dan kacang panjang. Selain itu, beberapa warga juga membudidayakan tanaman hortikultura dan tanaman pekarangan yang mendukung ketahanan pangan keluarga. Potensi ini dapat terus dikembangkan melalui penggunaan teknologi pertanian sederhana dan peningkatan akses pasar hasil panen.</li>
+                    </ul>
+                </div>
+                <!-- Deskripsi Peternakan -->
+                <div class="potensi-desc bg-light rounded-4 shadow-lg p-4 d-none" id="peternakan-desc">
+                    <h3 class="text-success fw-bold mb-3" style="font-size: 2rem;">Potensi Peternakan Dusun Krajan</h3>
+                    <ul class="mb-0 fs-5">
+                        <li>Dusun Krajan di Kabupaten Kebumen memiliki potensi peternakan yang cukup signifikan, terbukti dari data tahun 2019 yang mencatat populasi hewan ternak sekitar 90 ekor sapi potong, 400 ekor kambing, serta 1.700 ekor ayam lokal (ayam kampung/buras). Usaha ternak kambing lokal dipandang strategis karena permintaan pasar daging kambing relatif tinggi di desa maupun kota terdekat, tanpa membutuhkan modal besar dan dengan siklus reproduksi cepat. Peternakan ayam petelur dan kampung juga memberikan peluang nyata dalam pemenuhan kebutuhan telur dan daging lokal.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="wilayah" class="map-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Peta Wilayah</h2>
+            <div class="row">
+                <!-- Map Area -->
+                <div class="col-lg-8 mb-4">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4728836620577!2d109.71843731477673!3d-7.412151994645986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aa4418971ee3b%3A0x2e5ec5d4e8e615c9!2sGondanglegi%2C%20Kec.%20Ambal%2C%20Kabupaten%20Kebumen%2C%20Jawa%20Tengah!5e0!3m2!1sid!2:id!4v1679900000000!5m2!1sid!2:id"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Info Area -->
+                <div class="col-lg-4 mb-4">
+                    <div class="info-container">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Informasi Wilayah</h4>
+                                <div class="info-item mb-3">
+                                    <h5><i class="fas fa-map-marker-alt text-primary"></i> Lokasi</h5>
+                                    <p>Dusun Krajan, Desa Gondanglegi, Kecamatan Ambal, Kabupaten Kebumen, Jawa Tengah</p>
+                                </div>
+                                <div class="info-item mb-3">
+                                    <h5><i class="fas fa-ruler-combined text-primary"></i> Luas Wilayah</h5>
+                                    <p>500 Hektar</p>
+                                </div>
+                                <div class="info-item mb-3">
+                                    <h5><i class="fas fa-compass text-primary"></i> Batas Wilayah</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Utara: Desa ...</li>
+                                        <li>Selatan: Desa ...</li>
+                                        <li>Timur: Desa ...</li>
+                                        <li>Barat: Desa ...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Kontak Kami</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Dusun Krajan, Desa Gondanglegi, Kecamatan Ambal, Kabupaten Kebumen, Jawa Tengah<br>
+                        <i class="fas fa-phone"></i> (021) 1234567<br>
+                        <i class="fas fa-envelope"></i> info@desadigital.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Link Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Dusun</a></li>
+                        <li><a href="produk.html">UMKM Dusun</a></li>
+                        <li><a href="galeri.html">Galeri Dusun</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Media Sosial</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

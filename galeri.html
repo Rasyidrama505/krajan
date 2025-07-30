@@ -78,7 +78,10 @@
             <div class="row g-4">
                 <!-- Kegiatan -->
                 <div class="col-md-4 col-6 gallery-item" data-category="kegiatan">
-                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="image/gallery/kegiatan1.jpg" data-title="Gotong Royong Warga">
+                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        data-img="image/gallery/kegiatan1.jpg" 
+                        data-title="Gotong Royong Warga"
+                        data-desc="Warga Dusun Krajan bersama-sama melakukan gotong royong membersihkan lingkungan demi menjaga kebersihan dan keharmonisan.">
                         <img src="image/gallery/kegiatan1.jpg" class="img-fluid rounded" alt="Gotong Royong">
                         <div class="gallery-overlay">
                             <span>Gotong Royong Warga</span>
@@ -87,9 +90,12 @@
                 </div>
 
                 <!-- Wisata -->
-                <div class="col-md-4 col-6 gallery-item" data-category="wisata">
-                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="image/gallery/wisata1.jpg" data-title="Pemandangan Sawah">
-                        <img src="image/gallery/wisata1.jpg" class="img-fluid rounded" alt="Pemandangan Sawah">
+                <div class="col-md-4 col-6 gallery-item" data-category="pertanian">
+                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        data-img="image/gallery/sawah1.jpeg" 
+                        data-title="Pemandangan Sawah"
+                        data-desc="Hamparan sawah hijau di Dusun Krajan menawarkan ketenangan dan keindahan alam pedesaan.">
+                        <img src="image/gallery/sawah1.jpeg" class="img-fluid rounded" alt="Pemandangan Sawah">
                         <div class="gallery-overlay">
                             <span>Pemandangan Sawah</span>
                         </div>
@@ -98,7 +104,10 @@
 
                 <!-- Pertanian -->
                 <div class="col-md-4 col-6 gallery-item" data-category="pertanian">
-                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="image/gallery/pertanian1.jpg" data-title="Panen Raya">
+                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        data-img="image/gallery/pertanian1.jpg" 
+                        data-title="Panen Raya"
+                        data-desc="Panen raya menjadi momen kebahagiaan bagi petani Dusun Krajan atas hasil kerja keras mereka selama satu musim.">
                         <img src="image/gallery/pertanian1.jpg" class="img-fluid rounded" alt="Panen Raya">
                         <div class="gallery-overlay">
                             <span>Panen Raya</span>
@@ -106,6 +115,18 @@
                     </div>
                 </div>
 
+                <!-- Budaya -->
+                <div class="col-md-4 col-6 gallery-item" data-category="budaya">
+                    <div class="gallery-image" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        data-img="image/gallery/pertanian1.jpg" 
+                        data-title="Pertunjukan Wayang"
+                        data-desc="Pertunjukan wayang kulit sebagai warisan budaya digelar untuk masyarakat Dusun Krajan setiap tahun.">
+                        <img src="image/gallery/pertanian1.jpg" class="img-fluid rounded" alt="Pertunjukan Wayang">
+                        <div class="gallery-overlay">
+                            <span>Pertunjukan Wayang</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Tambahkan item galeri lainnya di sini -->
             </div>
         </div>
@@ -113,18 +134,27 @@
 
     <!-- Image Modal -->
     <div class="modal fade" id="imageModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body p-0">
-                    <img src="" class="img-fluid w-100" alt="Gallery Image">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="row align-items-center">
+                    <!-- Kolom Gambar -->
+                    <div class="col-md-5 text-center mb-3 mb-md-0">
+                        <img src="" class="img-fluid rounded border" alt="Gallery Image" id="modalImage" style="max-width: 220px; height: auto;">
+                    </div>
+                    <!-- Kolom Judul & Deskripsi -->
+                    <div class="col-md-7">
+                        <h5 class="modal-title mb-2" id="modalTitle"></h5>
+                        <p class="modal-desc text-muted" id="modalDesc"></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Footer -->
     <footer class="bg-light mt-5 py-4">
@@ -165,14 +195,16 @@
             const imageModal = document.getElementById('imageModal');
             const modalImage = imageModal.querySelector('.modal-body img');
             const modalTitle = imageModal.querySelector('.modal-title');
+            const modalDesc = imageModal.querySelector('.modal-desc');
 
             document.querySelectorAll('.gallery-image').forEach(image => {
                 image.addEventListener('click', function() {
                     modalImage.src = this.getAttribute('data-img');
                     modalTitle.textContent = this.getAttribute('data-title');
+                    modalDesc.textContent = this.getAttribute('data-desc') || "";
                 });
             });
         });
     </script>
-</head>
+</body>
 </html>
